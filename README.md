@@ -1,1 +1,1 @@
-# code_for_blog_posts
+This repository contains the code for posts on [benjaminwarner.dev](https://benjaminwarner.dev).
