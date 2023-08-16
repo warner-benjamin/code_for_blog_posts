@@ -1,0 +1,3 @@
+conda create -n flash python=3.10 "pytorch>=2.0.1" torchtext pytorch-cuda=11.8 cuda "transformers>=4.28.1" "datasets>=2.11.0" "tokenizers>=0.13.3" optuna matplotlib ipywidgets jupyterlab psutil wandb requests torchmetrics timm typer rich ninja coolname tabulate py-cpuinfo importlib-metadata pyyaml tqdm importlib-metadata -c pytorch -c nvidia/label/cuda-11.8.0 -c huggingface -c conda-forge
+source activate flash
+pip install mosaicml
