@@ -99,8 +99,9 @@ class CausalAttention(nn.Module):
                 attn = self.attn_drop(attn)
                 x = attn @ v
 
-        x = x.transpose(1, 2).reshape(B, S, C)
-        return self.out_drop(self.Wo(x))
+            x = x.transpose(1, 2)
+
+        return self.out_drop(self.Wo(x.reshape(B, S, C)))
 
 
 class TransformerBlock(nn.Module):
